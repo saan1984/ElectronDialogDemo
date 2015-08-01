@@ -4,7 +4,7 @@ var application = require('app'),
 application.on('ready', function() {
     var mainWindow = new BrowserWindow({
         width: 600,
-        height: 300,
+        height: 400,
         center:true,
         title:"Electron Dialog Demo",
     });

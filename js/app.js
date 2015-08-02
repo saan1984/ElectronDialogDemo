@@ -5,7 +5,6 @@ var Remote = require('remote'),
     mime = require("mime"),
     browserWindow = Remote.getCurrentWindow(),
     imageHolder = document.getElementById("imageHolder");
-
 //Method for reading file from path and rendering
 var readFileFromSystem = function(imageFilePath){
     var dataInBase64 = null,
@@ -22,7 +21,6 @@ var readFileFromSystem = function(imageFilePath){
         }
     });
 };
-
 //Method to selected file path
 var callbackSelectMethod = function(fileNameArray){
     var imageFilePath = null;
@@ -38,10 +36,9 @@ var callbackSelectMethod = function(fileNameArray){
         });
     }else{
         Dialog.showErrorBox("Error in Selecting File",
-                "Reason: May be Incorrect File Type");
+                "Reason: May be File is not selected");
     }
 };
-
 //Method for selecting image file
 var selectImageFile = function(opcode){
     Dialog.showOpenDialog({

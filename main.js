@@ -5,7 +5,7 @@ application.on('ready', function() {
         width: 800,
         height: 600,
         center:true,
-        title:"Electron Dialog Demo",
+        title:"Electron Dialog Demo"
     });
     mainWindow.loadUrl('file://' + __dirname + '/main.html');
     mainWindow.on('closed', function() {

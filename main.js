@@ -3,8 +3,8 @@ var application = require('app'),
     ipc = require('ipc');
 application.on('ready', function() {
     var mainWindow = new BrowserWindow({
-        width: 600,
-        height: 400,
+        width: 700,
+        height: 600,
         center:true,
         title:"Electron Dialog Demo",
     });
